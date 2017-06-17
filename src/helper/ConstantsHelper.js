@@ -1,4 +1,4 @@
-const emojiUrl = 'https://github.com/MSChuan/Blog_Comment/dist_prod/resource/image/emoji/'
+const emojiUrl = 'https://mschuan.github.io/Blog_Comment/dist_prod/resource/image/emoji/'
 
 const initialState = {
     CommentState: {

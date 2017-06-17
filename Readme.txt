@@ -1,4 +1,4 @@
-﻿Demo url: https://github.com/MSChuan/Blog_Comment/dist_prod/index.html
+﻿Demo url: https://mschuan.github.io/Blog_Comment/dist_prod/index.html
 
 If clone these files, you can directly run "npm install" to download the dependencies because the configs are all in package.json.
 Otherwise, you can create a new folder in your computer and run following commands to re-generate package.json.
