@@ -1,0 +1,39 @@
+@charset "utf-8";
+ol,ul {
+  list-style: none;
+}
+body {
+  background: url('../resource/image/background.jpg');
+  background-size: auto 2000px;
+}
+#TopBarContainer {
+    background: white;
+}
+#TopImageBarContainer {
+    margin-top: 2px;
+    padding-top: 10%;
+    background: url('../resource/image/topimage.jpg') no-repeat;
+    background-size: auto;
+}
+#BlogTitleContainer {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    text-shadow: 1px 0px 0px black;
+}
+#NavBarContainer li {
+    text-align: center;
+    &:hover {
+        background-color: #918F8F;
+    }
+}
+
+.commentList {
+  & > li:not(:first-child) {
+      margin-left: 10%;
+  }
+}
+
+.simditor-body {
+    min-height: 100px !important;
+}
