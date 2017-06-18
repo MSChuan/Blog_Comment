@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { Button, ListGroup, ListGroupItem, Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 import Simditor from 'simditor';
 import ReactDOM from 'react-dom';
-import {emojiUrl} from '../helper/ConstantsHelper';
+import config from '../root/Configure';
 
 class CommentList extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class CommentList extends React.Component {
                 textarea: textbox,
                 toolbar: ['title', 'bold', 'italic', 'underline', 'strikethrough', 'color', 'ol', 'ul', 'link', 'alignment', 'emoji'],
                 emoji: {
-                    imagePath: emojiUrl
+                    imagePath: config.emojiUrl
                 }
             });
         }

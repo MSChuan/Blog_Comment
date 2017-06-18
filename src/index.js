@@ -4,7 +4,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { browserHistory } from 'react-router';
 import { AppContainer } from 'react-hot-loader';
-import configureStore from './root/configureStore';
+import config from './root/Configure';
 import Root from './root/Root';
 import './style/main.scss';
 import '../node_modules/simditor/styles/simditor.scss';
@@ -12,7 +12,7 @@ import '../node_modules/simditor-emoji/styles/simditor-emoji.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 require('./resource/js/emoji');
 
-const store = configureStore(initialState);
+const store = config.configureStore(initialState);
 
 render(
     <AppContainer>

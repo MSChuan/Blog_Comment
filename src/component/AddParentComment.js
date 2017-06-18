@@ -3,7 +3,7 @@ import { Button, FormGroup, FormControl } from 'react-bootstrap';
 import $ from 'expose-loader?$!jquery';
 import Simditor from 'simditor';
 import ReactDOM from 'react-dom';
-import {emojiUrl} from '../helper/ConstantsHelper';
+import config from '../root/Configure';
 
 class AddParentComment extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class AddParentComment extends React.Component {
             textarea: $(textbox),
             toolbar: ['title', 'bold', 'italic', 'underline', 'strikethrough', 'color', 'ol', 'ul', 'link', 'alignment', 'emoji'],
             emoji: {
-                imagePath: emojiUrl
+                imagePath: config.emojiUrl
             }
         });
     }

@@ -1,5 +1,3 @@
-const emojiUrl = 'https://mschuan.github.io/Blog_Comment/dist_prod/resource/image/emoji/'
-
 const initialState = {
     CommentState: {
         packages: [],
@@ -10,4 +8,4 @@ const initialState = {
     }
 };
 
-export {emojiUrl, initialState};
+export {initialState};
