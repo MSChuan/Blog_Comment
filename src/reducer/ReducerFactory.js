@@ -15,7 +15,7 @@ const packages = (state = initialState.CommentState.packages, action) => {
                 ...state.slice(action.packageIndex + 1)
             ]);
         case types.AddParentComment:
-            return ([...state, [{text: action.text, created_at: '', praiseCount: 0, replyCount: 0, id: 0}]]);
+            return ([[{text: action.text, created_at: '', praiseCount: 0, replyCount: 0, id: 0}], ...state]);
         case types.PraiseComment:
             return ([
                 ...state.slice(0, action.packageIndex),
